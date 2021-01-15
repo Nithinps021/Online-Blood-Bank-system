@@ -210,7 +210,7 @@ export default function UserUpdate(props) {
             <div className="p1-details">
               <TextField
                 id="outlined-basic"
-                label="Date of birth"
+                label={String(detls.dob).slice(0,10)}
                 variant="outlined"
                 disabled="true"
                 className={classes.text}

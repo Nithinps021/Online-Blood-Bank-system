@@ -36,7 +36,7 @@ export default function UserProfile() {
   const [detls, setDetls] = useState({});
   const classes = useStyles();
   let udetails = JSON.parse(localStorage.getItem("User_details"));
-  
+  console.log(udetails)
   useEffect(() => {
     setDetls(udetails);
   }, []);
@@ -62,19 +62,6 @@ export default function UserProfile() {
               <h4>{detls.username}</h4>
             </div>
           </div>
-
-          {/* <div className="flexing">
-            <div className="p-details">
-              <h3>Name</h3>
-            </div>
-            <div>
-              <h2>:</h2>
-            </div>
-            <div className="p-details">
-              <h4>Name</h4>
-            </div>
-          </div> */}
-
           <div className="flexing">
             <div className="p-details">
               <h3>Email id</h3>
@@ -131,7 +118,7 @@ export default function UserProfile() {
               <h2>:</h2>
             </div>
             <div className="p-details">
-              <h4>Date of birth</h4>
+              <h4>{String(detls.dob).slice(0,10)}</h4>
             </div>
           </div>
         </div>
