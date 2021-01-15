@@ -80,7 +80,7 @@ export default function Log(props) {
             className={classes.text}
           />
 
-          <p>Forgot password?</p>
+          <a href="/signup" style={{textDecoration:"none",color:"black"}}><p>Forgot password?</p></a>
         </div>
       </div>
       <div className="signin-button">
