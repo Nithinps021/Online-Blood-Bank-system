@@ -105,7 +105,7 @@ export default function BasicTable(props) {
                 Email
               </TableCell>
               <TableCell align="center">
-                {String(row.email).slice(0, 10)}
+                {String(row.email)}
               </TableCell>
             </TableRow>
           </TableBody>
